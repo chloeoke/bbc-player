@@ -4,236 +4,279 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href=""> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
     <section id="section">
-
+        
+    
     </section>
-    <div class="container" id="container">
-        <div class="image" id="image-text">
-            <div class="imagnsvg">
-                <img src="https://ichef.bbci.co.uk/images/ic/640x640/p0d3g139.jpg" alt="" width="300" height="300">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100" height="100"><path d="M150 0C67.2 0 0 67.2 0 150s67.2 150 150 150 150-67.2 150-150S232.8 0 150 0z"/><path d="M183.5 252h-43.1V94.8c-7.9 4-15.8 8.1-23.7 12.4s-15.5 8.4-22.6 12.4V79.9c7.7-4.4 16.2-9.1 25.6-13.9s19.2-9.8 29.6-14.8h34.2V252z" fill="#fff"/></svg>
-            </div>
-            <div class="song-title">
-                <h6>
-                    Radio
-                </h6>
-                <h3>
-                    Radio
-                </h3>
-                <h1>
-                    Radio everywhere!!!!!
-                </h1>
-
-
-            </div>
-        </div>
-        <div class="lines" id="lines">
-            <div class="line1">
-
-            </div>
-            <div class="dot">
-
-            </div>
+    <div class="container id="container"">
+        <div class="spacer">
 
         </div>
-        <div class="icons" id="icons">
-            <div class="play-button">
-                <button><i id="playicon" class="fa-sharp fa-solid fa-play" onclick="changeIcon(this)"></i></button>
-
-            </div>
-
+        <div id="theGif" class="gif">
+            
+            <video id="theVideo" autoplay width="100vw" height="350vw">
+                <source src="./71d2636b.mp4" type="video/mp4
+                " srcset="">
+            </video>
         </div>
-        <div id="boxes">
-            <div class="box" id="box">
-               <p>
-                    Text goes here!!!!
-    
-                </p>
-                <h4>
-                    Text goes here!!!!
-    
-                </h4>
-                <h6>
-                    Some more text
-                </h5>
+        <!-- <iframe src="https://drive.google.com/file/d/1UIsizT3kF9dmKqggHYpQ6PvQmUphbHS1/preview" width="640" height="480" allow="autoplay"></iframe> -->
+
+        <div class="image-post">
+            <div class="image">
+                <div class="imsv">
+                    <img src="https://ichef.bbci.co.uk/images/ic/640x640/p0d3g139.jpg" alt="" srcset="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M150 0C67.2 0 0 67.2 0 150s67.2 150 150 150 150-67.2 150-150S232.8 0 150 0z"/><path d="M183.5 252h-43.1V94.8c-7.9 4-15.8 8.1-23.7 12.4s-15.5 8.4-22.6 12.4V79.9c7.7-4.4 16.2-9.1 25.6-13.9s19.2-9.8 29.6-14.8h34.2V252z" fill="#fff"/></svg>
+                </div>
+                <div class="song-title">
+                    <h3 style="line-height: 1.4;">RADIO 1
+                        <br>
+                        Radio 1's Life Hacks<br>
+                        with Vick and Katie: Why it’s important to fail</h3>
+                </div>
             </div>
-            <div class="box box2" id="box">
-                <p>
-                    Text goes here!!!!
-    
-                </p>
-                <h4>
-                    Text goes here!!!!
-    
-                </h4>
-                <h6>
-                    Some more text
-                </h6>
-            </div>
-            <div class="box" id="box">
-                <p>
-                    Text goes here!!!!
-    
-                </p>
-                <h4>
-                    Text goes here!!!!
-    
-                </h4>
-                <h6>
-                    Some more text
-                </h6>
+            
+        </div>
+        <div class="bars-button">
+            <div class="bars">
+                <div class="redbar"></div>
+                <div class="reddot">
+
+                </div>
+
             </div>
 
+            <div class="icons">
+                <div class="play-button">
+                    <button><i id="playicon" class="fa-sharp fa-solid fa-play" onclick="changeIcon(this)"></i></button>
+
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
+    
+    </div>
+
     
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
     *{
-        margin: 0;
+        margin:0;
         padding: 0;
         box-sizing: border-box;
     }
     body{
+        position: relative;
         width: 100vw;
-        height: 70vh;
-        overflow: hidden;
+        height: 500px;
+
+    }
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        font-family: montserrat;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+    }
+    .spacer{
+        width: 100vw;
+        height: 10%;
     }
     #section{
         position: relative;
-        width: 100vw;
-        height: 70vh;
-        background-image: url("https://images.pexels.com/photos/2302802/pexels-photo-2302802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        width: 100%;
+        height: 90%;
+        background-image: url("wallpaper 1.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        filter: blur(5px);
+        filter: blur(3px);
         z-index: -1;
     }
-    #container{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100vw;
-        height: 70vh;
-
+   
+    .gif{
         top: 0;
-        font-family: Montserrat, "sans-serif";
-        color: white;
+        position: absolute;
+        z-index: 1;
+        background-color: black;
+        opacity: 1;
+        transition: opacity 2s ease-in-out;
+
+        /* height: 65; */
+    }
+    video{
+       min-width: 100vw;
+       max-height: 85vw;
+       height: 31vw;
+       background-size: cover;
+       opacity: 1;
+       /* display: none; */
+       transition: display 1s ease-in-out;
+    }
+    
+    .container{
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-wrap: wrapzzz;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        
+    }
+    img{
+    
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    .image-post{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        width: 75vw;
+        margin-left: 18%;
+
+    }
+    svg{
+        position: absolute;
+        top: 130px;
+        left: 130px;
+        width: 70px;
+        height: 70px;
+        margin-left: 55px;
+    }
+    .imsv{
+        margin-left:55px;
     }
     .image{
         display: flex;
-        width: 100vw;
-        height: 35vh;
-        flex-wrap:wrap ;
-        justify-content: space-evenly;
+        width:100%;
+        
         align-items: center;
+        /* justify-content: space-between; */
+        color: white;
     }
-    img{
-        border-radius: 50%;
-
-    }
-    #boxes{
-        display: flex;
-        width: 100vw;
-        height: vh;
-        
-        padding: 10px 0 0 0 ;
-        margin-bottom: -55px;
-
-        font-family: poppins, sans-serif;
-        background-color: rgb(39, 37, 37);
-    }
-    #box{
-        color:antiquewhite;
-        padding: 0 0 0 6px;
-        margin-right: 2px;
-        background-color: rgb(39, 37, 37);
-        width: 33.3%;
-        height: 10vh;
-
-    }
-    .box2{
-        border-left:2px solid rgb(70, 65, 65) ;
-        border-right:2px solid rgb(70, 65, 65) ;
-    }
-    .imagnsvg{
-        position: relative;
-    }
-    .song-title{
-        margin-top: 30px;
-        margin-left:-15%;
-        
-
-
-    }
-    @media only screen and (max-width: 860px){
+    @media only screen and (max-width: 600px){
         .image{
-        display: flex;
-        width: 85vw;
-        height: 35vh;
-        flex-wrap:wrap ;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+
+            flex-wrap: wrap;
+        }
         .song-title{
-            margin-left: 30px;
-            margin-bottom: 60px;
-            width: 500px;
+            margin-top: 20px;
+            text-align: center;
+            margin-left: 40px;
+            padding: 0;
+        }
+        .image-post{
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
+            margin-left: 0;
+            padding: 0;
+        }
+        img{
+            margin-left: 30%;
+        }
+        svg{
+            margin-left: 30%;
+        }
+        video{
             
-            /* display: flex; */
+            height: 80vw;
+            
+            
         }
-        #container{
+        #theGif{
 
-            height: 100vh;
-        }
-        #section{
-
-            height: 90vh;
+            height: 0;
         }
     }
     
-    svg{
-        position:absolute;
-        bottom:0;
-        right: 2px;
+    
+    .song-title{
+        font-size: 13px;
+        margin-left: 12%;
+        margin-right: 1%;
+        width: 800px;
+       /* background-color: #757575; */
     }
-    .lines{
+    
+    .bars-button{
+        display: flex;
         position: relative;
-
-        width: 95vw;
-        height: 2px;
-        background-color: #757575;
+        /* background-color: aqua; */
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 200px;
     }
-    .line1{
-        width: 125px;
+    .bars::after{
+        content: "00:00";
+        position: absolute;
+        top:7px;
+        width: 70vw;
+        color: #757575;
+        /* background-color: #757575; */
+        height: auto;
+    }
+    .bars::before{
+        content: "LIVE";
+        font-weight: 400;
+        position: absolute;
+        top: 7px;
+        right:0px;
+        width: 2vw;
+        color: #757575;
+        /* background-color: #757575; */
+        height: auto;
+
+    }
+    
+    .bars{
+        width: 95%;
+        position: relative;
+        background-color: #757575;
         height: 2px;
+        /* background-color: white; */
+    }
+    .redbar{
+        height: 2px;
+        width: 25%;
         background-color: red;
         opacity: 0;
-
     }
-    .dot{
-        top: -5px;
-        left: 125px;
+    .redbar.active{
+        opacity:1;
+    }
+    .reddot.active{
+        opacity:1;
+    }
+    .reddot{
         position: absolute;
-        width: 13px;
-        height: 13px;
+        height: 10px;
+        width: 10px;
+        top: -4px;
+        left: 25%;
         background-color: red;
         border-radius: 50%;
         opacity: 0;
-
-
     }
-   
     .icons{
         width: 100%;
         display: flex;
@@ -242,9 +285,9 @@
         height: auto;
         
     }
-    .line1.active, .dot.active{
-        opacity: 1;
+    .fa-pause{
 
+        margin-left: -2px;
     }
     .play-button{
         display: flex;
@@ -252,7 +295,6 @@
         align-items: center;
     
         width: 70px;
-        background-color: transparent;
         
         height: 70px;
         border: 3px solid white;
@@ -269,7 +311,7 @@
         width: 20px;
         height: 28px;
         display: flex;
-        margin-bottom: 3px;
+        margin-bottom: 7px;
         text-align: center;
         font-size: 35px;
         padding-bottom: px;
@@ -279,15 +321,33 @@
         color: white;
         
     }
-    button{
-        background-color:transparent;
-        border: none;
-        outline: none;
+    #boxes{
+        display: flex;
+        width: 100vw;
+        height: 13vh;
+        
+        padding: 10px 0 0 0 ;
+        margin-top: -5px;
+        font-family: poppins, sans-serif;
+        background-color: rgb(39, 37, 37);
+    }
+    #box{
+        color:antiquewhite;
+        padding: 0 0 0 6px;
+        margin-right: 2px;
+        background-color: rgb(39, 37, 37);
+        width: 33.3%;
+        height: 10vh;
+
+    }
+    .box2{
+        border-left:2px solid rgb(70, 65, 65) ;
+        border-right:2px solid rgb(70, 65, 65) ;
     }
 </style>
-<script >
-    const redDot = document.querySelector(".line1")
-    const redBar = document.querySelector(".dot")
+<script>
+    const redDot = document.querySelector(".reddot")
+    const redBar = document.querySelector(".redbar")
     const play = document.querySelector(".fa-play")
     const pause = document.querySelector(".fa-pause")
     const playButton = document.querySelector(".play-button")
@@ -349,6 +409,6 @@
     fadeIn(theVideo)
 
     fadeOutWithDelay(theGif, 6000);
+    
 </script>
-
 </html>
