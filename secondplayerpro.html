@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <section id="section">
+
+    </section>
+    <div class="container" id="container">
+        <div class="image" id="image-text">
+            <div class="imagnsvg">
+                <img src="https://ichef.bbci.co.uk/images/ic/640x640/p0d3g139.jpg" alt="" width="300" height="300">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100" height="100"><path d="M150 0C67.2 0 0 67.2 0 150s67.2 150 150 150 150-67.2 150-150S232.8 0 150 0z"/><path d="M183.5 252h-43.1V94.8c-7.9 4-15.8 8.1-23.7 12.4s-15.5 8.4-22.6 12.4V79.9c7.7-4.4 16.2-9.1 25.6-13.9s19.2-9.8 29.6-14.8h34.2V252z" fill="#fff"/></svg>
+            </div>
+            <div class="song-title">
+                <h6>
+                    Radio
+                </h6>
+                <h3>
+                    Radio
+                </h3>
+                <h1>
+                    Radio everywhere!!!!!
+                </h1>
+
+
+            </div>
+        </div>
+        <div class="lines" id="lines">
+            <div class="line1">
+
+            </div>
+            <div class="dot">
+
+            </div>
+
+        </div>
+        <div class="icons" id="icons">
+            <div class="play-button">
+                <button><i id="playicon" class="fa-sharp fa-solid fa-play" onclick="changeIcon(this)"></i></button>
+
+            </div>
+
+        </div>
+        <div id="boxes">
+            <div class="box" id="box">
+               <p>
+                    Text goes here!!!!
+    
+                </p>
+                <h4>
+                    Text goes here!!!!
+    
+                </h4>
+                <h6>
+                    Some more text
+                </h5>
+            </div>
+            <div class="box box2" id="box">
+                <p>
+                    Text goes here!!!!
+    
+                </p>
+                <h4>
+                    Text goes here!!!!
+    
+                </h4>
+                <h6>
+                    Some more text
+                </h6>
+            </div>
+            <div class="box" id="box">
+                <p>
+                    Text goes here!!!!
+    
+                </p>
+                <h4>
+                    Text goes here!!!!
+    
+                </h4>
+                <h6>
+                    Some more text
+                </h6>
+            </div>
+
+    </div>
+    
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height: 70vh;
+        overflow: hidden;
+    }
+    #section{
+        position: relative;
+        width: 100vw;
+        height: 70vh;
+        background-image: url("https://images.pexels.com/photos/2302802/pexels-photo-2302802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(5px);
+        z-index: -1;
+    }
+    #container{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+        height: 70vh;
+
+        top: 0;
+        font-family: Montserrat, "sans-serif";
+        color: white;
+    }
+    .image{
+        display: flex;
+        width: 100vw;
+        height: 35vh;
+        flex-wrap:wrap ;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    img{
+        border-radius: 50%;
+
+    }
+    #boxes{
+        display: flex;
+        width: 100vw;
+        height: vh;
+        
+        padding: 10px 0 0 0 ;
+        margin-bottom: -55px;
+
+        font-family: poppins, sans-serif;
+        background-color: rgb(39, 37, 37);
+    }
+    #box{
+        color:antiquewhite;
+        padding: 0 0 0 6px;
+        margin-right: 2px;
+        background-color: rgb(39, 37, 37);
+        width: 33.3%;
+        height: 10vh;
+
+    }
+    .box2{
+        border-left:2px solid rgb(70, 65, 65) ;
+        border-right:2px solid rgb(70, 65, 65) ;
+    }
+    .imagnsvg{
+        position: relative;
+    }
+    .song-title{
+        margin-top: 30px;
+        margin-left:-15%;
+        
+
+
+    }
+    @media only screen and (max-width: 860px){
+        .image{
+        display: flex;
+        width: 85vw;
+        height: 35vh;
+        flex-wrap:wrap ;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+        .song-title{
+            margin-left: 30px;
+            margin-bottom: 60px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            /* display: flex; */
+        }
+        #container{
+
+            height: 100vh;
+        }
+        #section{
+
+            height: 90vh;
+        }
+    }
+    
+    svg{
+        position:absolute;
+        bottom:0;
+        right: 2px;
+    }
+    .lines{
+        position: relative;
+
+        width: 95vw;
+        height: 2px;
+        background-color: #757575;
+    }
+    .line1{
+        width: 125px;
+        height: 2px;
+        background-color: red;
+        opacity: 0;
+
+    }
+    .dot{
+        top: -5px;
+        left: 125px;
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        background-color: red;
+        border-radius: 50%;
+        opacity: 0;
+
+
+    }
+   
+    .icons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        
+    }
+    .line1.active, .dot.active{
+        opacity: 1;
+
+    }
+    .play-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 70px;
+        background-color: transparent;
+        
+        height: 70px;
+        border: 3px solid white;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+    .play-button:hover{
+        background-color: red;
+        border: none;
+        scale: 1.2;
+    }
+ 
+    i{
+        width: 20px;
+        height: 28px;
+        display: flex;
+        margin-bottom: 3px;
+        text-align: center;
+        font-size: 35px;
+        padding-bottom: px;
+        padding-left: px;
+        
+        
+        color: white;
+        
+    }
+    button{
+        background-color:transparent;
+        border: none;
+        outline: none;
+    }
+</style>
+<script >
+    const redDot = document.querySelector(".line1")
+    const redBar = document.querySelector(".dot")
+    const play = document.querySelector(".fa-play")
+    const pause = document.querySelector(".fa-pause")
+    const playButton = document.querySelector(".play-button")
+    const playButtonIcon = document.getElementById("playicon")
+    var audio = new Audio("https://business.playfm.al:8060/playfitness")
+
+    playButtonIcon.addEventListener("click", () => {
+        // redDot.style.opacity = 1
+        if (audio.paused){
+            audio.play()
+        }else{
+            audio.pause();
+            audio.currentTime = 0
+            
+        }
+    })
+    play.addEventListener("click", (e) => {
+        redBar.classList.toggle("active")
+        redDot.classList.toggle("active")
+
+    })
+    // pause.addEventListener("click", (e) => {
+    //     redBar.style.opacity = 0
+    //     redDot.style.opacity = 0
+
+    // })
+
+
+    function fadeIn(element){
+        
+        element.style.opacity = 1
+     
+
+    }
+    function fadeOutWithDelay(element, delay){
+        setTimeout(() =>{
+            element.style.opacity = 0
+            // element.style.display = "none"
+        }, delay);
+        setTimeout(() =>{
+            element.style.display = "none"
+            // element.style.display = "none"
+        }, 7000);
+        
+        
+    }
+
+    
+    
+    let changeIcon = function(icon){
+
+        playButtonIcon.classList.toggle("fa-play")
+        playButtonIcon.classList.toggle("fa-pause")
+        
+    }
+  
+    const theGif = document.getElementById("theGif")
+    const theVideo = document.getElementById("theVideo")
+    fadeIn(theVideo)
+
+    fadeOutWithDelay(theGif, 6000);
+</script>
+
+</html>
